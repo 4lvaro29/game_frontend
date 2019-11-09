@@ -9,11 +9,47 @@
 }
 
 .custom-card{
-  height: 12em;
+  height: 20em;
   display: flex;
   flex-direction: column;
+  justify-content: space-around ;
 }
 
 mat-card-title {
   text-align: center;
+}
+/* 
+.stone {
+  background-image: url('../../images/stone.png');
+  background-size: cover;
+}
+
+.paper {
+  background-image: url('../../images/paper.png');
+
+}
+
+.scissors{
+  background-image: url('../../images/scissors.png');
+
+} */
+
+.moves-row {
+  padding-top: 1em;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.player-name {
+  text-align: center;
+}
+
+.mat-fab {
+  margin-right: 1em;
+}
+
+.next-move {
+  margin-top:1em;
 }
