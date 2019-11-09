@@ -10,12 +10,16 @@ import { MatFormField, MatFormFieldControl, MatFormFieldModule } from '@angular/
 import {MatCardModule} from '@angular/material/card'; 
 import {MatButtonModule} from '@angular/material/button';
 import { RoundComponent } from './components/round/round.component';
+import { WinnerComponent } from './components/winner/winner.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    RoundComponent
+    RoundComponent,
+    WinnerComponent,
+   
   ],
   imports: [
     BrowserModule,
