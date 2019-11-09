@@ -8,10 +8,12 @@ html, body {
     
  }
 body { 
-    margin: 0;
+    margin: 1.5em;
     font-family:'Roboto', sans-serif;
     font-weight: 100;
     background-image: url('./app/images/background.jpeg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+    background-size: 300px;
+
  }
