@@ -26,6 +26,7 @@
     height: 12em;
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   button {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { HttpClient } from 'selenium-webdriver/http';
 //importar servicio players
 @Component({
   selector: 'app-main',
@@ -9,9 +10,12 @@ import { FormControl } from '@angular/forms';
 export class MainComponent implements OnInit {
   name = new FormControl('');
   
-  constructor() { }
+  // constructor(private gameService: GameService, http: HttpClient) { }
 
   ngOnInit() {
+    // this.gameService.getPlayers().subscribe((players) =>{
+    //   console.log(players);
+    // }) 
   }
 
   savePlayers(){

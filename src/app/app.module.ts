@@ -11,6 +11,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { RoundComponent } from './components/round/round.component';
 import { WinnerComponent } from './components/winner/winner.component';
+import { HttpClientModule } from '@angular/common/http';
+// import { GameService } from './game.service';
+
 
 
 @NgModule({
@@ -23,6 +26,7 @@ import { WinnerComponent } from './components/winner/winner.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
@@ -31,8 +35,14 @@ import { WinnerComponent } from './components/winner/winner.component';
     FormsModule,
     MatCardModule,
     MatButtonModule,
+    
   ],
-  providers: [{ provide: MatFormFieldModule, useValue: {} }, { provide: MatFormField, useValue: [] }, { provide: MatFormFieldControl, useValue: [] }],
+  providers: [{ provide: MatFormFieldModule, useValue: {} },
+    { provide: MatFormField, useValue: [] },
+    { provide: MatFormFieldControl, useValue: [] },
+    
+  ],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
