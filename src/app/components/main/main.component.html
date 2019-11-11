@@ -10,6 +10,6 @@
         <input matInput placeholder="Player Two" value="" [formControl]="name">
       </mat-form-field>
     </form>
-    <button mat-raised-button color="primary" routerLink="/app-round" routerLinkActive="active">Play!</button>
+    <button mat-raised-button color="primary" (click)="showSuccess()">Play!</button>
   </mat-card>
 </div>
