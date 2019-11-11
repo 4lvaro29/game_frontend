@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class GameService {
-  uri= 'http://localhost:3000'
+  uri= 'http://localhost:3000';
   constructor(private http: HttpClient) { }
 
   getPlayers(){

@@ -12,12 +12,16 @@ import { GameService } from 'src/app/game.service';
 export class MainComponent implements OnInit {
   name = new FormControl('');
   
-  constructor(private gameService: GameService) { }
+  constructor( private gameService: GameService) { 
+    this.gameService.getPlayers().subscribe((players)=>{
+        console.log(players);
+      })
+  }
 
   ngOnInit():void {
-    this.gameService.getPlayers().subscribe((players)=>{
-      console.log(players);
-    })
+    // this.gameService.getPlayers().subscribe((players)=>{
+    //   console.log(players);
+    // })
       
   };
     
