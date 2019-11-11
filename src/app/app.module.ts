@@ -15,7 +15,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { RoundComponent } from './components/round/round.component';
 import { WinnerComponent } from './components/winner/winner.component';
 import { HttpClientModule } from '@angular/common/http';
-import { GameService } from './game.service';
+import { GameService } from './services/game.service';
 
 @NgModule({
   declarations: [
