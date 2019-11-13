@@ -12,8 +12,6 @@ import {MatFormField,
         from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card'; 
 import {MatButtonModule} from '@angular/material/button';
-import { RoundComponent } from './components/round/round.component';
-import { WinnerComponent } from './components/winner/winner.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GameService } from './services/game.service';
 import { ToastrModule } from 'ngx-toastr';
@@ -22,9 +20,7 @@ import { ToastrModule } from 'ngx-toastr';
   declarations: [
     AppComponent,
     MainComponent,
-    RoundComponent,
-    WinnerComponent,
-   
+  
   ],
   imports: [
     BrowserModule,

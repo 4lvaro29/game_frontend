@@ -10,20 +10,16 @@ export class GameService {
   constructor(private http: HttpClient) { }
 
   getGames(){
-    return this.http.get(`${this.uri}/api/v1/games`);
+    return this.http.get(`${this.uri}/api/v1/games/`);
   }
   
-  addGame(id:number, player_1_name:string, player_2_name:string){
+  addGame(player_1_name:string, player_2_name:string){
     const game = {
-      player_1_name: player_1_name,
-      player_2_name: player_2_name
+       player_1_name,
+       player_2_name,
     }
-    
-    return this.http.post(`${this.uri}/api/v1/create/${id}`,game);
-  
+    return this.http.post(`${this.uri}/api/v1/games`,game);
   };
-
-
 
 }
 

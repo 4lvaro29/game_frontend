@@ -1,3 +1,4 @@
+/* Main styles */
 
 .flex-container {
   margin:5em;
@@ -8,44 +9,92 @@
 
   }
 
-  .custom-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .form-width {
-    width: 100%;
-  }
+.custom-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  mat-card-title {
-    text-align: center;
-  }
+.form-width {
+  width: 100%;
+}
 
-  .custom-card{
-    height: 12em;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
+mat-card-title {
+  text-align: center;
+}
 
-  button {
-    align-self: center;
-    width: 50%;
-  }
+
+button {
+  align-self: center;
+  width: 50%;
+}
+
+
+.flex-container {
+margin:5em;
+display: flex;
+flex-direction: column;
+flex: 1 1 auto;
+align-items: center;
+
+}
+
+.custom-card{
+width: 28em;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: space-around ;
+
+}
+
+mat-card-title {
+text-align: center;
+}
+
+.round-flex {
+display: flex;
+flex-direction:column;
+width: 18em;
+padding: 2em;
+
+}
+
+.moves-row {
+align-self: center;
+margin:2em;
+
+}
+
+.player-name {
+text-align: center;
+}
+
+.mat-fab {
+width: 58px;
+margin-right: 8px;
+
+}
+
+.next-move {
+margin-top:2em;
+}
 
 
 /* Personalize input label and underline colors
 
-  /* ::ng-deep .mat-form-field-underline {
-    color: black;
+/* ::ng-deep .mat-form-field-underline {
+  color: black;
 }
 
 ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
-    background-color: black;
-    
+  background-color: black;
+  
 }
 
 ::ng-deep .mat-form-field-empty.mat-form-field-label {
-    color: grey;
+  color: grey;
 } */
